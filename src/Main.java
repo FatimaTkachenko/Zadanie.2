@@ -12,5 +12,6 @@ public class Main {
             result = 0;
         }
         System.out.println(1950 / 100);
+        System.out.println(1950 /100 +1950);
     }
 }
