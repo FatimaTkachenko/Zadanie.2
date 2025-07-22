@@ -3,15 +3,15 @@ public class Main {
 
         int remains = 200;// начальный счета
         int accrual = 1750; // суммы пополнения
-        System.out.println(remains + accrual); // сумма на счету
+        int balance = remains + accrual;
 
-        int result;
-        if (remains + accrual > 1000) {
-            result = 1;
+        int bonus;
+        if (balance > 1000) {
+            bonus = balance / 100; // расчет бонусных рублей
         } else {
-            result = 0;
+            bonus = 0;
         }
-        System.out.println(1950 / 100);
-        System.out.println(1950 / 100 +1950);
+        System.out.println("Бонусных рублей: " + bonus);
+        System.out.println("Итоговый счет: " + balance + " рублей");
     }
 }
